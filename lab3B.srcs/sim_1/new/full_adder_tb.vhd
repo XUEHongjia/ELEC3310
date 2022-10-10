@@ -64,7 +64,6 @@ begin
  -- Stimulus process 
  stim_proc: process 
  begin 
-  TB_X <= '0'; TB_Y <= '0'; TB_C_in <= '0';
   wait for 100 ns; 
   TB_X <= '0'; TB_Y <= '0'; TB_C_in <= '0'; wait for 100 ns;
   TB_X <= '1'; TB_Y <= '0'; TB_C_in <= '0'; wait for 100 ns;
