@@ -66,12 +66,12 @@ begin
  begin 
   wait for 100 ns; 
   TB_X <= '0'; TB_Y <= '0'; TB_C_in <= '0'; wait for 100 ns;
-  TB_X <= '1'; TB_Y <= '0'; TB_C_in <= '0'; wait for 100 ns;
-  TB_X <= '0'; TB_Y <= '1'; TB_C_in <= '0'; wait for 100 ns;
-  TB_X <= '1'; TB_Y <= '1'; TB_C_in <= '0'; wait for 100 ns;
   TB_X <= '0'; TB_Y <= '0'; TB_C_in <= '1'; wait for 100 ns;
-  TB_X <= '1'; TB_Y <= '0'; TB_C_in <= '1'; wait for 100 ns;
+  TB_X <= '0'; TB_Y <= '1'; TB_C_in <= '0'; wait for 100 ns;
   TB_X <= '0'; TB_Y <= '1'; TB_C_in <= '1'; wait for 100 ns;
+  TB_X <= '1'; TB_Y <= '0'; TB_C_in <= '0'; wait for 100 ns;
+  TB_X <= '1'; TB_Y <= '0'; TB_C_in <= '1'; wait for 100 ns;
+  TB_X <= '1'; TB_Y <= '1'; TB_C_in <= '0'; wait for 100 ns;
   TB_X <= '1'; TB_Y <= '1'; TB_C_in <= '1'; wait for 100 ns;
   wait; 
 end process;
