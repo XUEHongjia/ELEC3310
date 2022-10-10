@@ -60,20 +60,20 @@ COMPONENT full_adder
 begin
  -- Instantiate the Unit Under Test (UUT) 
  uut: full_adder PORT MAP ( X => TB_X, Y => TB_Y, C_in => TB_C_in, S => TB_S, C_out => TB_C_out); 
- -- => means ¡°mapping¡± above 
+ -- => means Â¡Â°mappingÂ¡Â± above 
  -- Stimulus process 
  stim_proc: process 
  begin 
   TB_X <= '0'; TB_Y <= '0'; TB_C_in <= '0';
   wait for 100 ns; 
-  TB_X <= '0'; TB_Y <= '0'; TB_C_in <= '0'; wait for 10 ns;
-  TB_X <= '1'; TB_Y <= '0'; TB_C_in <= '0'; wait for 10 ns;
-  TB_X <= '0'; TB_Y <= '1'; TB_C_in <= '0'; wait for 10 ns;
-  TB_X <= '1'; TB_Y <= '1'; TB_C_in <= '0'; wait for 10 ns;
-  TB_X <= '0'; TB_Y <= '0'; TB_C_in <= '1'; wait for 10 ns;
-  TB_X <= '1'; TB_Y <= '0'; TB_C_in <= '1'; wait for 10 ns;
-  TB_X <= '0'; TB_Y <= '1'; TB_C_in <= '1'; wait for 10 ns;
-  TB_X <= '1'; TB_Y <= '1'; TB_C_in <= '1'; wait for 10 ns;
+  TB_X <= '0'; TB_Y <= '0'; TB_C_in <= '0'; wait for 100 ns;
+  TB_X <= '1'; TB_Y <= '0'; TB_C_in <= '0'; wait for 100 ns;
+  TB_X <= '0'; TB_Y <= '1'; TB_C_in <= '0'; wait for 100 ns;
+  TB_X <= '1'; TB_Y <= '1'; TB_C_in <= '0'; wait for 100 ns;
+  TB_X <= '0'; TB_Y <= '0'; TB_C_in <= '1'; wait for 100 ns;
+  TB_X <= '1'; TB_Y <= '0'; TB_C_in <= '1'; wait for 100 ns;
+  TB_X <= '0'; TB_Y <= '1'; TB_C_in <= '1'; wait for 100 ns;
+  TB_X <= '1'; TB_Y <= '1'; TB_C_in <= '1'; wait for 100 ns;
   wait; 
 end process;
 
