@@ -2,15 +2,15 @@ set_property PACKAGE_PIN W5 [get_ports {CLK_100M_in}]
 set_property IOSTANDARD LVCMOS33 [get_ports {CLK_100_in}] 
 
 ## LEDs 
-set_property PACKAGE_PIN U16 [get_ports { Q(0) }] 
-set_property IOSTANDARD LVCMOS33 [get_ports { Q(0) }] 
-set_property PACKAGE_PIN E19 [get_ports { Q(1) }] 
-set_property IOSTANDARD LVCMOS33 [get_ports { Q(1) }]
+set_property PACKAGE_PIN U16 [get_ports { Q[0] }] 
+set_property IOSTANDARD LVCMOS33 [get_ports { Q[0] }] 
+set_property PACKAGE_PIN E19 [get_ports { Q[1] }] 
+set_property IOSTANDARD LVCMOS33 [get_ports { Q[1] }]
 
-set_property PACKAGE_PIN U19 [get_ports { Q(2) }] 
-set_property IOSTANDARD LVCMOS33 [get_ports { Q(2) }] 
-set_property PACKAGE_PIN V19 [get_ports { Q(3) }] 
-set_property IOSTANDARD LVCMOS33 [get_ports { Q(3) }]
+set_property PACKAGE_PIN U19 [get_ports { Q[2] }] 
+set_property IOSTANDARD LVCMOS33 [get_ports { Q[2] }] 
+set_property PACKAGE_PIN V19 [get_ports { Q[3] }] 
+set_property IOSTANDARD LVCMOS33 [get_ports { Q[3] }]
 set_property PACKAGE_PIN W18 [get_ports { CLK_2S }] 
 set_property IOSTANDARD LVCMOS33 [get_ports { CLK_2S }]
 
