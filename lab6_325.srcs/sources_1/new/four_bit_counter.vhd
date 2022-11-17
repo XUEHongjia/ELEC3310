@@ -98,14 +98,18 @@ end mixed;
 
 library IEEE; 
 use IEEE.STD_LOGIC_1164.ALL; 
-use IEEE.NUMERIC_STD.ALL; 
+use IEEE.NUMERIC_STD.ALL;
+
 entity clk_divider is 
-port (clk_in: in std_logic; clk_2s: inout std_logic := '0'); --we initialize clk_2s to ¡°0¡± 
+port (clk_in: in std_logic; clk_2s: inout std_logic := '0'); --we initialize clk_2s to Â¡Â°0Â¡Â± 
 end clk_divider; 
+    
 architecture mixed of clk_divider is 
+    
 --constant C_reload_value : unsigned(31 downto 0) := to_unsigned( 100000000 - 2, 32); div 200M, for 0.5 Hz clk (2 secs clock) on real board 
 constant C_reload_value : unsigned(31 downto 0) := to_unsigned( 5 - 2, 32); --div 10, for 10 MHz clk in simulation 
 signal counter : unsigned(31 downto 0) := C_reload_value; 
+
  begin 
  process(clk_in) 
  begin 
@@ -118,4 +122,5 @@ signal counter : unsigned(31 downto 0) := C_reload_value;
  end if; 
  end if; 
  end process; 
+     
 end mixed; 
